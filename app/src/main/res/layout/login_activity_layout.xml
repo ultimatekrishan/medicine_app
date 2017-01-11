@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/holo_green_light"
+    tools:backgroundTintMode="multiply">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_outline"
+        android:layout_marginTop="107dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_outline"
+        android:layout_marginTop="170dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="OR Login Through "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/google"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:id="@+id/imageButton2"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:text="App Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/fb"
+        android:background="@android:color/transparent"
+        android:id="@+id/imageButton"
+        android:scaleType="fitXY"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        android:text="SIGNUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_outline2"
+        android:id="@+id/button2"
+        android:textColor="@android:color/white"
+        android:elevation="24dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:text="LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_outline2"
+        android:layout_marginTop="36dp"
+        android:id="@+id/button"
+        android:textColor="@android:color/white"
+        android:elevation="24dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+
+</RelativeLayout>
